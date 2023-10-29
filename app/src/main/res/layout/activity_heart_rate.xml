@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeartRateActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <Button
+            android:id="@+id/startTimerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Timer"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewHeartRateValue"
+            android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/stopTimerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Timer"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/startTimerButton"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/customTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Custom Timer (in milliseconds)"
+            android:layout_below="@id/textViewHeartRateValue"
+            android:layout_marginTop="135dp"
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/textViewHeartRateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="36sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/signOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewHeartRateValue"
+            android:layout_marginTop="180dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
